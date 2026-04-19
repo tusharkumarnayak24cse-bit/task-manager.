@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Student Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Smart Student Task Manager</h1>
+
+<div class="container">
+    <input type="text" id="taskName" placeholder="Task Name">
+    <input type="date" id="deadline">
+
+    <select id="priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+</div>
+
+<div class="actions">
+    <input type="text" id="searchInput" placeholder="Search task...">
+    <button onclick="searchTask()">Search</button>
+    <button onclick="undoDelete()">Undo Delete</button>
+    <button onclick="sortByPriority()">Sort by Priority</button>
+    <button onclick="showByDeadline()">Show by Deadline</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
